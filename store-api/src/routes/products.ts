@@ -21,7 +21,7 @@ router.get("/", async (req, res) => {
   const params = [];
 
   if (category) {
-    query += "WHERE category = $1";
+    query += " WHERE category = $1";
     params.push(category);
   }
 
